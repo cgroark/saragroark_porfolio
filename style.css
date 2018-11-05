@@ -30,6 +30,7 @@ header{
     height: 100vh;
     width: 100%;
     font-family: var(--font-1);
+    padding-top: 50px;
 
 }
 header div{
@@ -42,8 +43,16 @@ header h1{
 	color: white;
 }
 nav{
-	left:10%;
-	padding: 0 !important;
+	padding:10px 40px !important;
+	position: sticky !important;
+    background-color: white;
+    z-index: 900;
+    top: 0;
+}
+.nav-link{
+	color: black !important;
+    font-size: 20px;
+    font-family: var(--font-1);
 }
 .navbar-light .navbar-toggler {
     margin-right: 15%;
@@ -60,14 +69,7 @@ article.specialties div.col-md-4 img{
 article.specialties h3, article.specialties h1{
 	text-align: center;
 }
-article.contact{
-	background: url("images/cobblestone-earth-surface-granite-1029604.jpg");
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    width: 100%;
-}
+
 div.col-md-8 h3{
 	margin-bottom: 0;
     padding: 3px 0;
@@ -78,14 +80,32 @@ div.col-md-8 h3{
 div.col-md-4 h3{
 	margin-bottom: 18px;
 }
-.callout{
-	background-color: white;
-    border: 3px solid #b27878;
-    padding: 15px;
+article.finances div.col-md-8 img{
+	width: 100%;
+	height: 80%;
 }
-
+article.finances p{
+	font-size: 22px;
+}
 article.contact p, article.contact i{
 	font-size: 26px;
+}
+article.contact a{
+	color: black;
+}
+article.contact{
+	background: url("images/cobblestone-earth-surface-granite-1029604.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+#contact-content{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20vh;
 }
 .accordion{
 	background-color: var(--dark-brown);
@@ -97,9 +117,12 @@ article.contact p, article.contact i{
     outline: none;
     transition: 0.4s;
     font-size: 20px;
+    border: solid 2px var(--dark-brown);
 }
 .accordion:hover{
-	background-color: var(--darker-brown);
+	background-color: white;
+	color: var(--dark-brown);
+	border: solid 2px  var(--dark-brown);
 }
 .accordion:after {
     content: '\02795';
@@ -112,11 +135,14 @@ article.contact p, article.contact i{
 .active{
 	background-color: var(--dark-brown);
     color: white;
+    border-bottom: none;
+
 }
 .panel{
    	padding: 15px;
 	text-align: center;
-	border: solid 3px var(--dark-brown);
+	border: solid 2px var(--dark-brown);
+	border-top: none;
 	background-color: white;
 	display: none;
 	overflow: hidden;
@@ -126,3 +152,14 @@ article.contact p, article.contact i{
 	list-style: none;
 	font-size: 18px;
 }
+hr{
+	width: 90%;
+	border-top: 3px solid rgba(0,0,0,.1) !important;
+}
+.nav-about.color-shift, .nav-specialties.color-shift, .nav-finances.color-shift, .nav-contact.color-shift{
+	color: var(--dark-brown)!important;
+	text-decoration: underline;
+	text-decoration-color: var(--dark-brown);
+}
+
+
