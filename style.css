@@ -31,7 +31,6 @@ header{
     width: 100%;
     font-family: var(--font-1);
     padding-top: 50px;
-
 }
 header div{
 	position: relative;
@@ -161,5 +160,17 @@ hr{
 	text-decoration: underline;
 	text-decoration-color: var(--dark-brown);
 }
+@media only screen and (min-width: 768px){
+	.col-md-4, .col-md-6, .col-md-8 {
+	    max-width: 100% !important;
+	    flex: 100% !important;
+	}
+}
+@media only screen and (max-width: 768px){
+	#top-header{
+	    height: 20vh;
+	}
+}
+
 
 

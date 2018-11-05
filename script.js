@@ -34,7 +34,7 @@ $(window).on('scroll', function(){
         $('.nav-specialties').removeClass('color-shift');
 	}else if(stopHeight > specialties && stopHeight < finances){
 		$('.nav-specialties').addClass('color-shift');
-        $('.nav-about').removeClass('color-shift');
+		$('.nav-about').removeClass('color-shift');
         $('.nav-finances').removeClass('color-shift');
 	}else if(stopHeight > finances && stopHeight < contact){
 		$('.nav-finances').addClass('color-shift');
@@ -44,6 +44,11 @@ $(window).on('scroll', function(){
 		console.log('contact reahced')
 		$('.nav-contact').addClass('color-shift');
         $('.nav-finances').removeClass('color-shift');
+	}else{
+		$('.nav-specialties').removeClass('color-shift');
+		$('.nav-about').removeClass('color-shift');
+		$('.nav-finances').removeClass('color-shift');
+		$('.nav-contact').removeClass('color-shift');
 	}
 })
 
