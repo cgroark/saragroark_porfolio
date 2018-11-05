@@ -59,7 +59,7 @@ nav{
 article.about, article.finances{
 	background-color: var(--beige);
 }
-article.about div.col-md-4 img{
+article.about div.col-4 img{
 	width: 100%;
 }
 article.specialties div.col-md-4 img{
