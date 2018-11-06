@@ -8,7 +8,6 @@
 
 }
 main{
-	max-width: 1200px;
 	font-family: var(--font-1);
 }
 main p{
@@ -160,7 +159,7 @@ hr{
 	text-decoration: underline;
 	text-decoration-color: var(--dark-brown);
 }
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
 	.col-md-4, .col-md-6, .col-md-8 {
 	    max-width: 100% !important;
 	    flex: 100% !important;
