@@ -2,6 +2,7 @@ $(window).on('load', function(){
 	var navHeight = $('.navbar').height()
 	$('h1').css('margin-top', navHeight);
 	$('article.finances img').css('margin-top', navHeight+5);
+	$('#top-header h1').css('margin-top', 20);
 	$('#contact-content h1').css('margin-top', 0);
 });
 
