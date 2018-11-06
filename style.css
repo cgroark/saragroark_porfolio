@@ -58,7 +58,7 @@ nav{
 article.about, article.finances{
 	background-color: var(--beige);
 }
-article.about div.col-4 img{
+article.about div.col-md-4 img{
 	width: 100%;
 }
 article.specialties div.col-md-4 img{
@@ -159,15 +159,13 @@ hr{
 	text-decoration: underline;
 	text-decoration-color: var(--dark-brown);
 }
-@media only screen and (max-width: 768px){
-	.col-md-4, .col-md-6, .col-md-8 {
-	    max-width: 100% !important;
-	    flex: 100% !important;
-	}
-}
+
 @media only screen and (max-width: 768px){
 	#top-header{
-	    height: 20vh;
+	    height: 50vh;
+	}
+	#top-header h1{
+	    font-size: 3.5rem;
 	}
 }
 
