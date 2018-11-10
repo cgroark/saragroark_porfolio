@@ -26,7 +26,7 @@ header{
 	background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 40vh;
     width: 100%;
     font-family: var(--font-1);
     padding-top: 50px;
@@ -158,9 +158,6 @@ hr{
 }
 
 @media only screen and (max-width: 768px){
-	#top-header{
-	    height: 50vh;
-	}
 	#top-header h1{
 	    font-size: 3.5rem;
 	}
@@ -172,6 +169,11 @@ hr{
 	}
 	article.contact a{
 		font-size: 20px;
+	}
+	article.about img, article.specialties div.col-md-4 img{
+		width: 50% !important;
+		display: block;
+		margin: auto;
 	}
 }
 
